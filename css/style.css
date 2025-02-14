@@ -79,12 +79,12 @@ img {
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .nav .list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 40px;
 }
 
