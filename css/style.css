@@ -40,14 +40,18 @@ img {
   margin: 0 auto;
 }
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header .logo {
   margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
-  display: inline-block;
 }
 .logo,
 .logo-footer {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -80,6 +84,7 @@ img {
 .nav .list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 
@@ -127,9 +132,8 @@ img {
 
 .hero {
   background-color: #2e2f42;
-  width: 1440px;
-  height: 600px;
   display: flex;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -161,6 +165,8 @@ img {
   background-color: #4d5ae5;
   min-width: 169px;
   min-height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -183,14 +189,11 @@ img {
 }
 
 .about-us {
-  padding-left: 141px;
-  padding-right: 141px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .about-us-list {
   display: flex;
-  gap: 70px;
+  gap: 24px;
 }
 
 .about-us-item {
@@ -205,6 +208,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .about-us-p,
@@ -228,8 +232,7 @@ img {
 }
 
 .team-title {
-  padding-bottom: 72px;
-  padding-top: 120px;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -238,26 +241,29 @@ img {
 }
 .our-team {
   background-color: #f4f4fd;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .team-item {
   background-color: #ffff;
   width: calc((100% - 72px) / 4);
-}
-
-.team-name {
-  margin-bottom: 8px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-card {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
-.portfolio-title {
+.portfolio-section {
   padding-top: 120px;
-  padding-bottom: 72px;
+  padding-bottom: 120px;
+}
+
+.portfolio-title {
+  margin-bottom: 72px;
 }
 
 .portfolio-item {
@@ -272,14 +278,8 @@ img {
   padding-bottom: 120px;
 }
 
-.portfolio-name {
-  margin-bottom: 8px;
-}
-
 .app-card {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -296,10 +296,14 @@ img {
 
 .footer {
   background-color: #2e2f42;
-  height: 312px;
   display: flex;
+  padding: 100px 0;
   flex-direction: column;
   justify-content: center;
+}
+
+.logo-footer {
+  margin-bottom: 16px;
 }
 
 .footer-p {
@@ -308,5 +312,4 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-top: 16px;
 }
